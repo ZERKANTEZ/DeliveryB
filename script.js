@@ -17,30 +17,29 @@
 
   const MENU = {
     r1: [
-      { id: 'm1', nombre: 'Cuarto de Libra Combo', descripcion: 'Hamburguesa, papas medianas y bebida helada.', precio: 8.5, img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Top seller' },
-      { id: 'm2', nombre: 'McNuggets (10 pzs)', descripcion: 'Nuggets dorados con salsa a elección.', precio: 10.9, img: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Para compartir' },
-      { id: 'm3', nombre: 'McWrap Crispy', descripcion: 'Wrap crujiente con lechuga, queso y salsa cremosa.', precio: 7.8, img: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Nuevo' }
+      { id: 'm1', nombre: 'Cuarto de Libra Combo', descripcion: 'Hamburguesa, papas medianas y bebida helada.', precio: 169, img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Top seller' },
+      { id: 'm2', nombre: 'McNuggets (10 pzs)', descripcion: 'Nuggets dorados con salsa a elección.', precio: 219, img: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Para compartir' },
+      { id: 'm3', nombre: 'McWrap Crispy', descripcion: 'Wrap crujiente con lechuga, queso y salsa cremosa.', precio: 155, img: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Nuevo' }
     ],
     r2: [
-      { id: 'm4', nombre: 'Bucket Crispy', descripcion: 'Piezas de pollo crujiente ideales para compartir.', precio: 14, img: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Favorito' },
-      { id: 'm5', nombre: 'Twister Combo', descripcion: 'Wrap con papas y bebida en un combo rápido.', precio: 9.5, img: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Combo' },
-      { id: 'm6', nombre: 'Hot Wings', descripcion: 'Alitas picantes con crocancia intensa.', precio: 8.2, img: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Picante' }
+      { id: 'm4', nombre: 'Bucket Crispy', descripcion: 'Piezas de pollo crujiente ideales para compartir.', precio: 279, img: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Favorito' },
+      { id: 'm5', nombre: 'Twister Combo', descripcion: 'Wrap con papas y bebida en un combo rápido.', precio: 189, img: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Combo' },
+      { id: 'm6', nombre: 'Hot Wings', descripcion: 'Alitas picantes con crocancia intensa.', precio: 163, img: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten', badge: 'Picante' }
     ],
     r3: [
-      { id: 'm7', nombre: 'Whopper Combo', descripcion: 'Hamburguesa a la parrilla, papas y refresco.', precio: 11, img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Clásico' },
-      { id: 'm8', nombre: 'Chicken Crispy', descripcion: 'Pollo crujiente con vegetales frescos.', precio: 10.5, img: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Muy pedido' },
-      { id: 'm9', nombre: 'Papas Supreme', descripcion: 'Papas con queso fundido y topping bacon.', precio: 6.7, img: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=600&q=80', alergenos: 'Lácteo', badge: 'Extra' }
+      { id: 'm7', nombre: 'Whopper Combo', descripcion: 'Hamburguesa a la parrilla, papas y refresco.', precio: 219, img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Clásico' },
+      { id: 'm8', nombre: 'Chicken Crispy', descripcion: 'Pollo crujiente con vegetales frescos.', precio: 209, img: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Muy pedido' },
+      { id: 'm9', nombre: 'Papas Supreme', descripcion: 'Papas con queso fundido y topping bacon.', precio: 133, img: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=600&q=80', alergenos: 'Lácteo', badge: 'Extra' }
     ],
     r4: [
-      { id: 'm10', nombre: 'Sub Pollo Teriyaki', descripcion: 'Sándwich caliente con pollo y salsa teriyaki.', precio: 9, img: 'https://images.unsplash.com/photo-1485451456034-3f9391c6f769?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Soja', badge: 'Fresh pick' },
-      { id: 'm11', nombre: 'Italian BMT', descripcion: 'Sándwich de embutidos con queso y vegetales.', precio: 11.5, img: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Popular' },
-      { id: 'm12', nombre: 'Galleta doble chocolate', descripcion: 'Postre tibio para cerrar el pedido.', precio: 3.2, img: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Postre' }
+      { id: 'm10', nombre: 'Sub Pollo Teriyaki', descripcion: 'Sándwich caliente con pollo y salsa teriyaki.', precio: 179, img: 'https://images.unsplash.com/photo-1485451456034-3f9391c6f769?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Soja', badge: 'Fresh pick' },
+      { id: 'm11', nombre: 'Italian BMT', descripcion: 'Sándwich de embutidos con queso y vegetales.', precio: 229, img: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Lácteo', badge: 'Popular' },
+      { id: 'm12', nombre: 'Galleta doble chocolate', descripcion: 'Postre tibio para cerrar el pedido.', precio: 65, img: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80', alergenos: 'Gluten, Huevo', badge: 'Postre' }
     ]
   };
 
   let restauranteActual = null;
-  let carritoRestauranteId = null;
-  let carrito = [];
+  let carrito = []; // cada ítem: { idPlato, restId, nombre, precio, img, cantidad }
   let filtroCategoria = 'todas';
   let busquedaRestaurantes = '';
   let busquedaPlatos = '';
@@ -105,8 +104,8 @@
     return div.innerHTML;
   }
 
-  function formatEuros(amount) {
-    return Number(amount).toFixed(2).replace('.', ',') + ' €';
+  function formatMXN(amount) {
+    return '$' + Number(amount).toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
 
   function buildLogoUrl(domain) {
@@ -135,17 +134,27 @@
     return carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
   }
 
-  function getShippingCost(subtotal = getCartSubtotal()) {
-    return subtotal > 0 ? 2.5 : 0;
+  // Envío por sucursal: $35 MXN por cada sucursal con productos
+  function getUniqueRestIds() {
+    return [...new Set(carrito.map((item) => item.restId))];
+  }
+
+  function getShippingCost() {
+    const uniqueRests = getUniqueRestIds();
+    return uniqueRests.length > 0 ? uniqueRests.length * 35 : 0;
   }
 
   function getCartTotal() {
-    const subtotal = getCartSubtotal();
-    return subtotal + getShippingCost(subtotal);
+    return getCartSubtotal() + getShippingCost();
   }
 
   function getDishQuantity(idPlato) {
     return carrito.find((item) => item.idPlato === idPlato)?.cantidad || 0;
+  }
+
+  // Subtotal e ítems filtrados para una sucursal específica
+  function getRestSubtotal(restId) {
+    return carrito.filter((i) => i.restId === restId).reduce((s, i) => s + i.precio * i.cantidad, 0);
   }
 
   function getDishById(restId, dishId) {
@@ -189,9 +198,10 @@
     const count = getCartCount();
     const total = getCartTotal();
     const currentPanel = getCurrentPanel();
+    const numRests = getUniqueRestIds().length;
 
     elCartButtonMeta.textContent = count > 0
-      ? `${count} producto${count > 1 ? 's' : ''} · ${formatEuros(total)}`
+      ? `${count} producto${count > 1 ? 's' : ''} · ${formatMXN(total)}`
       : 'Sin productos';
 
     if (count > 0) {
@@ -201,8 +211,9 @@
       elCartBadge.hidden = true;
     }
 
-    elCartBarLabel.textContent = `${count} producto${count === 1 ? '' : 's'} en tu pedido`;
-    elCartBarTotal.textContent = formatEuros(total);
+    const restsLabel = numRests > 1 ? ` · ${numRests} sucursales` : '';
+    elCartBarLabel.textContent = `${count} producto${count === 1 ? '' : 's'} en tu pedido${restsLabel}`;
+    elCartBarTotal.textContent = formatMXN(total);
     elCartBar.hidden = !(count > 0 && currentPanel === elStepProductos);
 
     elBtnSidebarCart.disabled = count === 0;
@@ -314,7 +325,6 @@
 
   function resetCart() {
     carrito = [];
-    carritoRestauranteId = null;
   }
 
   function addDishToCart(dishId) {
@@ -323,15 +333,11 @@
     const dish = getDishById(restauranteActual, dishId);
     if (!dish) return;
 
-    if (!carritoRestauranteId) {
-      carritoRestauranteId = restauranteActual;
-    }
-
-    const item = carrito.find((entry) => entry.idPlato === dishId);
+    const item = carrito.find((entry) => entry.idPlato === dishId && entry.restId === restauranteActual);
     if (item) {
       item.cantidad += 1;
     } else {
-      carrito.push({ idPlato: dish.id, nombre: dish.nombre, precio: dish.precio, img: dish.img, cantidad: 1 });
+      carrito.push({ idPlato: dish.id, restId: restauranteActual, nombre: dish.nombre, precio: dish.precio, img: dish.img, cantidad: 1 });
     }
 
     renderAllCartViews();
@@ -345,10 +351,6 @@
       item.cantidad -= 1;
     } else {
       carrito = carrito.filter((entry) => entry.idPlato !== dishId);
-    }
-
-    if (!carrito.length) {
-      carritoRestauranteId = null;
     }
 
     renderAllCartViews();
@@ -392,7 +394,7 @@
           </div>
           <div class="dish-footer">
             <div class="dish-price-block">
-              <span class="dish-price">${formatEuros(plato.precio)}</span>
+              <span class="dish-price">${formatMXN(plato.precio)}</span>
               <span class="dish-price-note">Puedes ajustar la cantidad al momento</span>
             </div>
             <div class="dish-actions">
@@ -425,52 +427,68 @@
   function renderSidebarCart() {
     elSidebarItems.innerHTML = '';
 
-    const restaurant = getRestaurantById(carritoRestauranteId);
     const subtotal = getCartSubtotal();
-    const envio = getShippingCost(subtotal);
+    const envio = getShippingCost();
     const total = subtotal + envio;
+    const uniqueRestIds = getUniqueRestIds();
 
     if (!carrito.length) {
       elSidebarRestaurant.textContent = 'Aún no has agregado productos.';
       elSidebarEmpty.hidden = false;
     } else {
-      elSidebarRestaurant.textContent = restaurant ? getRestaurantLabel(restaurant) : 'Tu pedido actual';
+      const restNames = uniqueRestIds.map((rid) => {
+        const r = getRestaurantById(rid);
+        return r ? r.nombre : rid;
+      });
+      elSidebarRestaurant.textContent = restNames.join(', ');
       elSidebarEmpty.hidden = true;
 
-      carrito.forEach((item) => {
-        const li = document.createElement('li');
-        li.className = 'sidebar-item';
-        li.innerHTML = `
-          <div class="sidebar-item-copy">
-            <strong>${escapeHtml(item.nombre)}</strong>
-            <span>${item.cantidad} x ${formatEuros(item.precio)}</span>
-          </div>
-          <div class="sidebar-item-actions">
-            <button type="button" class="sidebar-icon-btn" data-sidebar-action="decrease" data-dish-id="${item.idPlato}" aria-label="Quitar una unidad de ${escapeHtml(item.nombre)}">
-              <span class="material-symbols-outlined">remove</span>
-            </button>
-            <span class="sidebar-item-qty">${item.cantidad}</span>
-            <button type="button" class="sidebar-icon-btn" data-sidebar-action="increase" data-dish-id="${item.idPlato}" aria-label="Agregar una unidad de ${escapeHtml(item.nombre)}">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </div>
-        `;
-        elSidebarItems.appendChild(li);
+      // Agrupar por sucursal
+      uniqueRestIds.forEach((rid) => {
+        const r = getRestaurantById(rid);
+        if (uniqueRestIds.length > 1) {
+          const header = document.createElement('li');
+          header.className = 'sidebar-group-header';
+          header.textContent = r ? getRestaurantLabel(r) : rid;
+          elSidebarItems.appendChild(header);
+        }
+
+        carrito.filter((i) => i.restId === rid).forEach((item) => {
+          const li = document.createElement('li');
+          li.className = 'sidebar-item';
+          li.innerHTML = `
+            <div class="sidebar-item-copy">
+              <strong>${escapeHtml(item.nombre)}</strong>
+              <span>${item.cantidad} x ${formatMXN(item.precio)}</span>
+            </div>
+            <div class="sidebar-item-actions">
+              <button type="button" class="sidebar-icon-btn" data-sidebar-action="decrease" data-dish-id="${item.idPlato}" aria-label="Quitar una unidad de ${escapeHtml(item.nombre)}">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="sidebar-item-qty">${item.cantidad}</span>
+              <button type="button" class="sidebar-icon-btn" data-sidebar-action="increase" data-dish-id="${item.idPlato}" aria-label="Agregar una unidad de ${escapeHtml(item.nombre)}">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+            </div>
+          `;
+          elSidebarItems.appendChild(li);
+        });
       });
     }
 
-    elSidebarSubtotal.textContent = formatEuros(subtotal);
-    elSidebarEnvio.textContent = formatEuros(envio);
-    elSidebarTotal.textContent = formatEuros(total);
+    elSidebarSubtotal.textContent = formatMXN(subtotal);
+    const envioNote = uniqueRestIds.length > 1 ? ` ($35 x ${uniqueRestIds.length})` : '';
+    elSidebarEnvio.textContent = formatMXN(envio) + envioNote;
+    elSidebarTotal.textContent = formatMXN(total);
   }
 
   function renderResumen() {
     elListaResumen.innerHTML = '';
 
-    const restaurant = getRestaurantById(carritoRestauranteId);
     const subtotal = getCartSubtotal();
-    const envio = getShippingCost(subtotal);
+    const envio = getShippingCost();
     const total = subtotal + envio;
+    const uniqueRestIds = getUniqueRestIds();
 
     if (!carrito.length) {
       elResumenVacio.hidden = false;
@@ -478,44 +496,80 @@
       elResumenRestauranteTime.textContent = 'Tiempo: -';
     } else {
       elResumenVacio.hidden = true;
-      elResumenRestauranteName.textContent = restaurant ? getRestaurantLabel(restaurant) : 'Sucursal';
-      elResumenRestauranteTime.textContent = restaurant ? `Tiempo: ${restaurant.tiempo} min` : 'Tiempo: -';
 
-      carrito.forEach((item) => {
-        const li = document.createElement('li');
-        li.className = 'resumen-item';
-        li.innerHTML = `
-          <div class="resumen-item-main">
-            <img src="${item.img}" alt="${escapeHtml(item.nombre)}" class="resumen-item-image" loading="lazy" />
-            <div class="resumen-item-info">
-              <div class="resumen-item-name">${escapeHtml(item.nombre)}</div>
-              <div class="resumen-item-qty">${formatEuros(item.precio)} c/u</div>
-            </div>
-          </div>
-          <div class="resumen-item-side">
-            <div class="resumen-item-price">${formatEuros(item.precio * item.cantidad)}</div>
-            <div class="qty-control qty-control-compact">
-              <button type="button" class="qty-btn" data-summary-action="decrease" data-dish-id="${item.idPlato}" aria-label="Quitar una unidad de ${escapeHtml(item.nombre)}">
-                <span class="material-symbols-outlined">remove</span>
-              </button>
-              <span class="qty-value">${item.cantidad}</span>
-              <button type="button" class="qty-btn" data-summary-action="increase" data-dish-id="${item.idPlato}" aria-label="Agregar una unidad de ${escapeHtml(item.nombre)}">
-                <span class="material-symbols-outlined">add</span>
-              </button>
-            </div>
-          </div>
-        `;
+      if (uniqueRestIds.length === 1) {
+        const r = getRestaurantById(uniqueRestIds[0]);
+        elResumenRestauranteName.textContent = r ? getRestaurantLabel(r) : 'Sucursal';
+        elResumenRestauranteTime.textContent = r ? `Tiempo: ${r.tiempo} min` : 'Tiempo: -';
+      } else {
+        const names = uniqueRestIds.map((rid) => {
+          const r = getRestaurantById(rid);
+          return r ? r.nombre : rid;
+        });
+        elResumenRestauranteName.textContent = names.join(' + ');
+        const maxTime = Math.max(...uniqueRestIds.map((rid) => getRestaurantById(rid)?.tiempo || 0));
+        elResumenRestauranteTime.textContent = `Tiempo estimado: ${maxTime} min`;
+      }
 
-        elListaResumen.appendChild(li);
+      // Agrupar por sucursal
+      uniqueRestIds.forEach((rid) => {
+        const r = getRestaurantById(rid);
+        if (uniqueRestIds.length > 1) {
+          const groupLi = document.createElement('li');
+          groupLi.className = 'resumen-group-header';
+          groupLi.innerHTML = `<span class="material-symbols-outlined">storefront</span> ${escapeHtml(r ? getRestaurantLabel(r) : rid)}`;
+          elListaResumen.appendChild(groupLi);
+        }
+
+        carrito.filter((i) => i.restId === rid).forEach((item) => {
+          const li = document.createElement('li');
+          li.className = 'resumen-item';
+          li.innerHTML = `
+            <div class="resumen-item-main">
+              <img src="${item.img}" alt="${escapeHtml(item.nombre)}" class="resumen-item-image" loading="lazy" />
+              <div class="resumen-item-info">
+                <div class="resumen-item-name">${escapeHtml(item.nombre)}</div>
+                <div class="resumen-item-qty">${formatMXN(item.precio)} c/u</div>
+              </div>
+            </div>
+            <div class="resumen-item-side">
+              <div class="resumen-item-price">${formatMXN(item.precio * item.cantidad)}</div>
+              <div class="qty-control qty-control-compact">
+                <button type="button" class="qty-btn" data-summary-action="decrease" data-dish-id="${item.idPlato}" aria-label="Quitar una unidad de ${escapeHtml(item.nombre)}">
+                  <span class="material-symbols-outlined">remove</span>
+                </button>
+                <span class="qty-value">${item.cantidad}</span>
+                <button type="button" class="qty-btn" data-summary-action="increase" data-dish-id="${item.idPlato}" aria-label="Agregar una unidad de ${escapeHtml(item.nombre)}">
+                  <span class="material-symbols-outlined">add</span>
+                </button>
+              </div>
+            </div>
+          `;
+          elListaResumen.appendChild(li);
+        });
       });
     }
 
-    elSubtotal.textContent = formatEuros(subtotal);
-    elEnvio.textContent = formatEuros(envio);
-    elTotal.textContent = formatEuros(total);
-    elTotalFormFinal.textContent = formatEuros(total);
-    elFormRestaurante.textContent = restaurant ? getRestaurantLabel(restaurant) : '-';
-    elFormTiempo.textContent = restaurant ? `${restaurant.tiempo} min` : '-';
+    const envioNote = uniqueRestIds.length > 1 ? ` ($35 x ${uniqueRestIds.length} sucursales)` : '';
+    elSubtotal.textContent = formatMXN(subtotal);
+    elEnvio.textContent = formatMXN(envio) + envioNote;
+    elTotal.textContent = formatMXN(total);
+    elTotalFormFinal.textContent = formatMXN(total);
+
+    // Resumen de forma de pago
+    if (uniqueRestIds.length === 1) {
+      const r = getRestaurantById(uniqueRestIds[0]);
+      elFormRestaurante.textContent = r ? getRestaurantLabel(r) : '-';
+      elFormTiempo.textContent = r ? `${r.tiempo} min` : '-';
+    } else {
+      const names = uniqueRestIds.map((rid) => {
+        const r = getRestaurantById(rid);
+        return r ? r.nombre : rid;
+      });
+      elFormRestaurante.textContent = names.join(', ');
+      const maxTime = Math.max(...uniqueRestIds.map((rid) => getRestaurantById(rid)?.tiempo || 0));
+      elFormTiempo.textContent = `${maxTime} min`;
+    }
   }
 
   function renderAllCartViews() {
@@ -531,22 +585,19 @@
     const restaurant = getRestaurantById(restId);
     if (!restaurant) return;
 
-    if (carrito.length > 0 && carritoRestauranteId && carritoRestauranteId !== restId) {
-      const currentCartRestaurant = getRestaurantById(carritoRestauranteId);
-      const confirmed = window.confirm(`Tu carrito actual pertenece a ${getRestaurantLabel(currentCartRestaurant)}. ¿Quieres vaciarlo para cambiar a ${getRestaurantLabel(restaurant)}?`);
-
-      if (!confirmed) {
-        return;
-      }
-
-      resetCart();
-    }
-
+    // Multi-sucursal: ya no se necesita vaciar el carrito al cambiar de sucursal
     restauranteActual = restId;
     busquedaPlatos = '';
     elSearchPlatos.value = '';
     elTituloRestaurante.textContent = getRestaurantLabel(restaurant);
-    elRestauranteUbicacion.textContent = `${restaurant.ubicacion} · ${restaurant.tiempo} min`;
+
+    const itemsEnEstaSucursal = carrito.filter((i) => i.restId === restId).reduce((s, i) => s + i.cantidad, 0);
+    const multiRest = getUniqueRestIds().filter((rid) => rid !== restId).length > 0;
+    let subtitle = `${restaurant.ubicacion} · ${restaurant.tiempo} min`;
+    if (multiRest) {
+      subtitle += ' · Tienes productos de otras sucursales en el carrito';
+    }
+    elRestauranteUbicacion.textContent = subtitle;
 
     renderAllCartViews();
     showPanel(elStepProductos);
@@ -565,13 +616,6 @@
   function abrirCheckout() {
     if (!carrito.length) {
       window.alert('Agrega productos antes de continuar.');
-      return;
-    }
-
-    const restaurant = getRestaurantById(carritoRestauranteId);
-    if (!restaurant) {
-      window.alert('Selecciona una sucursal antes de continuar.');
-      showPanel(elStepRestaurante);
       return;
     }
 
@@ -731,8 +775,10 @@
   elBtnSidebarCart.addEventListener('click', abrirResumen);
   elBtnCartBar.addEventListener('click', abrirResumen);
   elBtnSeguirComprando.addEventListener('click', () => {
-    if (carritoRestauranteId) {
-      abrirMenuRestaurante(carritoRestauranteId);
+    // Volver al último menú visto, o al primero con ítems, o a la lista de sucursales
+    const targetId = restauranteActual || getUniqueRestIds()[0] || null;
+    if (targetId) {
+      abrirMenuRestaurante(targetId);
     } else {
       showPanel(elStepRestaurante);
     }
@@ -766,7 +812,7 @@
     event.preventDefault();
     setFormFeedback('');
 
-    if (!carrito.length || !carritoRestauranteId) {
+    if (!carrito.length) {
       setFormFeedback('Tu carrito está vacío. Agrega productos antes de confirmar.');
       showPanel(elStepResumen);
       return;
@@ -793,8 +839,8 @@
       return;
     }
 
-    if (telefono.replace(/\D/g, '').length < 9) {
-      setFormFeedback('Ingresa un teléfono válido.');
+    if (telefono.replace(/\D/g, '').length < 10) {
+      setFormFeedback('Ingresa un teléfono válido (10 dígitos).');
       return;
     }
 
@@ -802,21 +848,33 @@
       return;
     }
 
-    const restaurant = getRestaurantById(carritoRestauranteId);
-    if (!restaurant) {
-      setFormFeedback('La sucursal ya no está disponible. Vuelve a seleccionarla.');
-      showPanel(elStepRestaurante);
-      return;
+    const uniqueRestIds = getUniqueRestIds();
+    const total = getCartTotal();
+
+    let confirmMsg, confirmResto, confirmTiempo;
+    if (uniqueRestIds.length === 1) {
+      const r = getRestaurantById(uniqueRestIds[0]);
+      confirmMsg = `Tu pedido en ${r ? getRestaurantLabel(r) : 'la sucursal'} ya está en preparación.`;
+      confirmResto = r ? getRestaurantLabel(r) : '-';
+      confirmTiempo = r ? `${r.tiempo} min` : '-';
+    } else {
+      const names = uniqueRestIds.map((rid) => {
+        const r = getRestaurantById(rid);
+        return r ? r.nombre : rid;
+      });
+      const maxTime = Math.max(...uniqueRestIds.map((rid) => getRestaurantById(rid)?.tiempo || 0));
+      confirmMsg = `Tu pedido de ${names.join(', ')} ya está en preparación.`;
+      confirmResto = names.join(', ');
+      confirmTiempo = `${maxTime} min`;
     }
 
-    const total = getCartTotal();
-    elConfirmMessage.textContent = `Tu pedido en ${getRestaurantLabel(restaurant)} ya está en preparación.`;
-    elConfirmResto.textContent = getRestaurantLabel(restaurant);
-    elConfirmTotal.textContent = formatEuros(total);
-    elConfirmTiempo.textContent = `${restaurant.tiempo} min`;
+    elConfirmMessage.textContent = confirmMsg;
+    elConfirmResto.textContent = confirmResto;
+    elConfirmTotal.textContent = formatMXN(total);
+    elConfirmTiempo.textContent = confirmTiempo;
 
     console.log('Pedido confirmado:', {
-      restaurante: getRestaurantLabel(restaurant),
+      sucursales: uniqueRestIds.map((rid) => getRestaurantById(rid)?.nombre),
       items: carrito,
       total,
       metodoPago,
