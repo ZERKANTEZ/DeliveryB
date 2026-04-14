@@ -3,89 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RushEats — Delivery Online</title>
+    <title>RushEats — Delivery rápido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <!-- Google Material Symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <!-- Header con Logo + Carrito Visible -->
     <header class="header">
-      <div class="header-container">
-        <div class="header-left">
+      <div class="header-shell">
+        <div class="brand-lockup">
           <img
             src="./assets/logo-delivery-b.svg"
-            width="40"
-            height="40"
-            alt=""
+            width="48"
+            height="48"
+            alt="RushEats"
             class="header-logo"
           />
-          <h1 class="header-title">RushEats</h1>
+          <div>
+            <p class="brand-kicker">Entrega express</p>
+            <h1 class="header-title">RushEats</h1>
+          </div>
         </div>
+
         <button class="cart-button" id="cart-button" aria-label="Ver carrito">
-          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="cart-button-copy">
+            <span class="cart-button-label">Ver carrito</span>
+            <span class="cart-button-meta" id="cart-button-meta">Sin productos</span>
+          </span>
           <span class="cart-badge" id="cart-badge" hidden>0</span>
         </button>
       </div>
 
-      <!-- Breadcrumb de Pasos (4 pasos VISIBLES) -->
       <nav class="progress-steps" aria-label="Pasos del pedido">
         <div class="progress-step active" data-step="1">
-          <span class="progress-number material-symbols-outlined">home</span>
-          <span class="progress-label">Local</span>
+          <span class="progress-number material-symbols-outlined">storefront</span>
+          <div class="progress-copy">
+            <span class="progress-eyebrow">Paso 1</span>
+            <span class="progress-label">Sucursal</span>
+          </div>
         </div>
         <div class="progress-step" data-step="2">
           <span class="progress-number material-symbols-outlined">restaurant_menu</span>
-          <span class="progress-label">Menú</span>
+          <div class="progress-copy">
+            <span class="progress-eyebrow">Paso 2</span>
+            <span class="progress-label">Menú</span>
+          </div>
         </div>
         <div class="progress-step" data-step="3">
           <span class="progress-number material-symbols-outlined">shopping_bag</span>
-          <span class="progress-label">Resumen</span>
+          <div class="progress-copy">
+            <span class="progress-eyebrow">Paso 3</span>
+            <span class="progress-label">Carrito</span>
+          </div>
         </div>
         <div class="progress-step" data-step="4">
           <span class="progress-number material-symbols-outlined">credit_score</span>
-          <span class="progress-label">Pago</span>
+          <div class="progress-copy">
+            <span class="progress-eyebrow">Paso 4</span>
+            <span class="progress-label">Pago</span>
+          </div>
         </div>
       </nav>
     </header>
 
     <main class="main">
-      <!-- ===== PASO 1: ELEGIR RESTAURANTE ===== -->
       <section id="step-restaurante" class="panel active">
-        <div class="panel-header">
-          <h2>Restaurantes cerca tuyo</h2>
-          <p class="panel-subtitle">Elige dónde quieres comer</p>
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="hero-kicker">Tu próxima comida</span>
+            <h2>Elige una sucursal que se entienda al instante</h2>
+            <p class="panel-subtitle">
+              Marcas reales, tiempos visibles y un pedido que siempre te deja claro qué llevas.
+            </p>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>20-30 min</strong>
+              <span>Entrega promedio</span>
+            </div>
+            <div class="hero-stat">
+              <strong>4 marcas</strong>
+              <span>Sucursales activas</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Carrito visible</strong>
+              <span>Mientras agregas</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Buscador como feature principal -->
         <div class="search-container">
           <input
             type="text"
             id="search-restaurants"
             class="search-input"
-            placeholder="Busca restaurante, comida..."
-            aria-label="Buscar restaurantes"
+            placeholder="Busca sucursal, marca o comida..."
+            aria-label="Buscar sucursales"
           />
           <span class="material-symbols-outlined search-icon">search</span>
         </div>
 
-        <!-- Categorías visibles como tabs/chips -->
-        <div class="category-filter">
+        <div class="category-filter" aria-label="Filtrar por categoría">
           <button class="category-chip active" data-category="todas">Todas</button>
-          <button class="category-chip" data-category="pizza"><span class="material-symbols-outlined">local_pizza</span> Pizza</button>
-          <button class="category-chip" data-category="asiatica"><span class="material-symbols-outlined">ramen_dining</span> Asiática</button>
-          <button class="category-chip" data-category="hamburguesas"><span class="material-symbols-outlined">lunch_dining</span> Burgers</button>
+          <button class="category-chip" data-category="hamburguesas">
+            <span class="material-symbols-outlined">lunch_dining</span>
+            Burgers
+          </button>
+          <button class="category-chip" data-category="pollo">
+            <span class="material-symbols-outlined">set_meal</span>
+            Pollo
+          </button>
+          <button class="category-chip" data-category="sandwiches">
+            <span class="material-symbols-outlined">breakfast_dining</span>
+            Sándwiches
+          </button>
         </div>
 
-        <!-- Listado de restaurantes (grilla 3 columnas desktop, 1-2 móvil) -->
-        <ul id="lista-restaurantes" class="restaurants-grid"></ul>
+        <ul id="lista-restaurantes" class="restaurants-grid" aria-live="polite"></ul>
       </section>
 
-      <!-- ===== PASO 2: ELEGIR PLATOS ===== -->
       <section id="step-productos" class="panel" hidden>
         <div class="panel-header with-back">
-          <button type="button" class="btn-back" id="btn-volver-rest" aria-label="Volver a restaurantes">
-            <span class="material-symbols-outlined">arrow_back</span> Volver
+          <button
+            type="button"
+            class="btn-back"
+            id="btn-volver-rest"
+            aria-label="Volver a sucursales"
+          >
+            <span class="material-symbols-outlined">arrow_back</span>
+            Sucursales
           </button>
           <div>
             <h2 id="titulo-restaurante">Menú</h2>
@@ -93,85 +148,115 @@
           </div>
         </div>
 
-        <!-- Buscador en paso menú -->
-        <div class="search-container">
-          <input
-            type="text"
-            id="search-platos"
-            class="search-input"
-            placeholder="Busca platos..."
-            aria-label="Filtrar platos del menú"
-            autocomplete="off"
-          />
-          <span class="material-symbols-outlined search-icon">search</span>
-        </div>
+        <div class="menu-shell">
+          <div class="menu-main">
+            <div class="menu-intro">
+              <p class="menu-kicker">Pide con contexto</p>
+              <p class="menu-note">
+                Ajusta cantidades desde aquí mismo. Tu carrito se actualiza sin obligarte a adivinar.
+              </p>
+            </div>
 
-        <!-- Listado dinámico de platos -->
-        <ul id="lista-platos" class="dishes-list"></ul>
+            <div class="search-container">
+              <input
+                type="text"
+                id="search-platos"
+                class="search-input"
+                placeholder="Busca platos..."
+                aria-label="Filtrar platos del menú"
+                autocomplete="off"
+              />
+              <span class="material-symbols-outlined search-icon">search</span>
+            </div>
+
+            <ul id="lista-platos" class="dishes-list" aria-live="polite"></ul>
+          </div>
+
+          <aside class="order-sidebar" aria-label="Pedido actual">
+            <div class="order-sidebar-head">
+              <p class="order-sidebar-kicker">Pedido actual</p>
+              <h3>Tu carrito vive al lado del menú</h3>
+            </div>
+
+            <div id="sidebar-restaurant" class="sidebar-restaurant">Aún no has agregado productos.</div>
+            <ul id="sidebar-items" class="sidebar-items" aria-live="polite"></ul>
+            <p id="sidebar-empty" class="empty-state">Agrega productos para ver tu pedido en tiempo real.</p>
+
+            <div class="sidebar-totals">
+              <div class="total-line">
+                <span>Subtotal</span>
+                <strong id="sidebar-subtotal">0,00 €</strong>
+              </div>
+              <div class="total-line">
+                <span>Envío</span>
+                <strong id="sidebar-envio">0,00 €</strong>
+              </div>
+              <div class="total-line total-final">
+                <span>Total</span>
+                <strong id="sidebar-total">0,00 €</strong>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-large" id="btn-sidebar-cart">
+              Ver carrito
+            </button>
+          </aside>
+        </div>
       </section>
 
-      <!-- ===== PASO 3: RESUMEN DEL PEDIDO ===== -->
       <section id="step-resumen" class="panel" hidden>
         <div class="panel-header">
           <h2>Resumen del pedido</h2>
-          <p class="panel-subtitle">Revisa antes de confirmar</p>
+          <p class="panel-subtitle">Revisa cantidades, total y sucursal antes de pagar.</p>
         </div>
 
-        <!-- Nombre restaurante visible -->
         <div class="resumen-restaurant-info">
-          <strong id="resumen-restaurant-name">Restaurante</strong>
-          <span class="resumen-restaurant-detail" id="resumen-restaurant-time">Tiempo: 35 min</span>
+          <strong id="resumen-restaurant-name">Sucursal</strong>
+          <span class="resumen-restaurant-detail" id="resumen-restaurant-time">Tiempo: -</span>
         </div>
 
-        <!-- Listado de items en carrito -->
         <div class="resumen-items-container">
-          <ul id="lista-resumen" class="resumen-items"></ul>
-          <p id="resumen-vacio" class="empty-state">Tu carrito está vacío</p>
+          <ul id="lista-resumen" class="resumen-items" aria-live="polite"></ul>
+          <p id="resumen-vacio" class="empty-state" aria-live="polite">Tu carrito está vacío.</p>
         </div>
 
-        <!-- Total y descuento (si aplica) -->
         <div class="resumen-totals">
           <div class="total-line">
-            <span>Subtotal:</span>
+            <span>Subtotal</span>
             <span id="subtotal-delivery">0,00 €</span>
           </div>
           <div class="total-line">
-            <span>Envío:</span>
-            <span id="envio-delivery">2,50 €</span>
+            <span>Envío</span>
+            <span id="envio-delivery">0,00 €</span>
           </div>
           <div class="total-line total-final">
-            <strong>Total:</strong>
+            <strong>Total</strong>
             <strong id="total-delivery">0,00 €</strong>
           </div>
         </div>
 
-        <!-- Acciones -->
         <div class="actions-resumen">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            id="btn-seguir-comprando"
-          >
-            Agregar más platos
+          <button type="button" class="btn btn-secondary" id="btn-seguir-comprando">
+            Seguir agregando
           </button>
           <button type="button" id="btn-comprar" class="btn btn-primary">
-            Ir a pago
+            Continuar a pago
           </button>
         </div>
       </section>
 
-      <!-- ===== PASO 4: FORMULARIO DE PAGO/DATOS ===== -->
       <section id="step-formulario" class="panel" hidden>
         <div class="panel-header">
           <h2>Completa tu pedido</h2>
-          <p class="panel-subtitle">Información de envío y pago</p>
+          <p class="panel-subtitle">Datos de envío, contacto y forma de pago.</p>
         </div>
 
         <form id="form-pedido" class="form-pedido">
-          <!-- Sección Datos de Envío -->
+          <div id="form-feedback" class="form-feedback" role="alert" hidden></div>
+
           <fieldset class="form-section">
             <legend>Dirección de envío</legend>
-            
+
             <div class="form-group">
               <label for="input-calle">Calle y número *</label>
               <input
@@ -180,6 +265,7 @@
                 name="calle"
                 placeholder="Ej: Calle Principal 123"
                 required
+                autocomplete="street-address"
                 class="form-input"
               />
             </div>
@@ -193,6 +279,7 @@
                   name="ciudad"
                   placeholder="Ej: Madrid"
                   required
+                  autocomplete="address-level2"
                   class="form-input"
                 />
               </div>
@@ -204,27 +291,27 @@
                   name="codigo_postal"
                   placeholder="Ej: 28001"
                   required
+                  autocomplete="postal-code"
                   class="form-input"
                 />
               </div>
             </div>
 
             <div class="form-group">
-              <label for="input-notas">Notas especiales (opcional)</label>
+              <label for="input-notas">Notas especiales</label>
               <textarea
                 id="input-notas"
                 name="notas"
-                placeholder="Ej: Sin cebolla, extra queso, avísame cuando llegues..."
+                placeholder="Ej: Sin cebolla, timbra dos veces, deja en recepción..."
                 rows="3"
                 class="form-input"
               ></textarea>
             </div>
           </fieldset>
 
-          <!-- Sección Contacto -->
           <fieldset class="form-section">
             <legend>Datos de contacto</legend>
-            
+
             <div class="form-group">
               <label for="input-email">Email *</label>
               <input
@@ -233,6 +320,7 @@
                 name="email"
                 placeholder="tu@email.com"
                 required
+                autocomplete="email"
                 class="form-input"
               />
             </div>
@@ -245,27 +333,27 @@
                 name="telefono"
                 placeholder="+34 XXX XXX XXX"
                 required
+                autocomplete="tel"
+                inputmode="tel"
                 class="form-input"
               />
             </div>
           </fieldset>
 
-          <!-- Sección Pago (simplificada) -->
           <fieldset class="form-section">
             <legend>Método de pago</legend>
-            
+
             <div class="payment-options">
               <label class="payment-option">
                 <input type="radio" name="pago" value="tarjeta" checked required />
-                <span class="payment-label">💳 Tarjeta de crédito/débito</span>
+                <span class="payment-label">Tarjeta de crédito o débito</span>
               </label>
               <label class="payment-option">
                 <input type="radio" name="pago" value="efectivo" required />
-                <span class="payment-label">💵 Efectivo al recibir</span>
+                <span class="payment-label">Efectivo al recibir</span>
               </label>
             </div>
 
-            <!-- Datos tarjeta (aparece si selecciona tarjeta) -->
             <div id="card-inputs" class="card-inputs">
               <div class="form-group">
                 <label for="input-card">Número de tarjeta *</label>
@@ -274,6 +362,9 @@
                   id="input-card"
                   name="tarjeta"
                   placeholder="1234 5678 9012 3456"
+                  inputmode="numeric"
+                  autocomplete="cc-number"
+                  maxlength="19"
                   class="form-input"
                 />
               </div>
@@ -286,6 +377,9 @@
                     id="input-expiry"
                     name="vencimiento"
                     placeholder="MM/YY"
+                    inputmode="numeric"
+                    autocomplete="cc-exp"
+                    maxlength="5"
                     class="form-input"
                   />
                 </div>
@@ -296,34 +390,34 @@
                     id="input-cvv"
                     name="cvv"
                     placeholder="123"
-                    class="form-input"
+                    inputmode="numeric"
+                    autocomplete="cc-csc"
                     maxlength="4"
+                    class="form-input"
                   />
                 </div>
               </div>
             </div>
           </fieldset>
 
-          <!-- Resumen final antes de enviar -->
           <div class="form-summary">
             <div class="summary-row">
-              <span>Total a pagar:</span>
+              <span>Total a pagar</span>
               <strong id="total-form-final">0,00 €</strong>
             </div>
             <div class="summary-row">
-              <span>Restaurante:</span>
+              <span>Sucursal</span>
               <span id="form-restaurante">-</span>
             </div>
             <div class="summary-row">
-              <span>Tiempo estimado:</span>
-              <span id="form-tiempo">35 min</span>
+              <span>Tiempo estimado</span>
+              <span id="form-tiempo">-</span>
             </div>
           </div>
 
-          <!-- Botones -->
           <div class="form-actions">
             <button type="button" class="btn btn-secondary" id="btn-volver-resumen">
-              Volver al resumen
+              Volver al carrito
             </button>
             <button type="submit" class="btn btn-primary btn-large">
               Confirmar pedido
@@ -332,17 +426,16 @@
         </form>
       </section>
 
-      <!-- ===== CONFIRMACIÓN ===== -->
       <section id="step-confirmacion" class="panel panel-center" hidden>
         <div class="confirmation-icon material-symbols-outlined">check_circle</div>
-        <h2>¡Pedido confirmado!</h2>
+        <h2>Pedido confirmado</h2>
         <p id="msg-confirm" class="confirmation-message">
-          Tu pedido está en preparación
+          Tu pedido ya entró a cocina.
         </p>
         <div class="confirmation-details">
-          <p><strong>Restaurante:</strong> <span id="confirm-resto">-</span></p>
-          <p><strong>Total:</strong> <span id="confirm-total">0,00 €</span></p>
-          <p><strong>Tiempo estimado:</strong> <span id="confirm-tiempo">35 min</span></p>
+          <p><strong>Sucursal</strong> <span id="confirm-resto">-</span></p>
+          <p><strong>Total</strong> <span id="confirm-total">0,00 €</span></p>
+          <p><strong>Tiempo estimado</strong> <span id="confirm-tiempo">35 min</span></p>
         </div>
         <button type="button" class="btn btn-primary" id="btn-nuevo">
           Hacer otro pedido
@@ -350,29 +443,41 @@
       </section>
     </main>
 
+    <div id="cart-bar" class="cart-bar" hidden>
+      <div class="cart-bar-copy">
+        <span class="cart-bar-label" id="cart-bar-label">0 productos en tu pedido</span>
+        <strong class="cart-bar-total" id="cart-bar-total">0,00 €</strong>
+      </div>
+      <button type="button" class="btn btn-primary" id="btn-cart-bar">Ver carrito</button>
+    </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
           <h2 class="header-title">RushEats</h2>
-          <p>La comida que amas, entregada con pasión.</p>
+          <p>Pide rápido, con claridad visual y control real del carrito.</p>
         </div>
         <div class="footer-links">
           <div class="footer-column">
             <h3>Descubrir</h3>
-            <a href="#">Restaurantes</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Cerca de mí</a>
+            <a href="#">Sucursales</a>
+            <a href="#">Promociones</a>
+            <a href="#">Entrega cerca de mí</a>
           </div>
           <div class="footer-column">
             <h3>Soporte</h3>
-            <a href="#">Centro de ayuda</a>
-            <a href="#">Términos de servicio</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Términos</a>
             <a href="#">Privacidad</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>RushEats © 2026 | Hecho con ❤️ para amantes de la comida</p>
+        <p>
+          RushEats © 2026
+          <span class="footer-separator">•</span>
+          <a href="https://logo.dev">Logos provided by Logo.dev</a>
+        </p>
       </div>
     </footer>
 
